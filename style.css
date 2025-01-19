@@ -39,7 +39,7 @@ header{
 
 .logo{
   font-size: 3rem;
-  color: lightskyblue;
+  color: royalblue;
   font-weight: 800;
   cursor: pointer;
   transition: 0.5s ease;
@@ -58,10 +58,13 @@ nav{
   border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
+nav a:hover {
+  transform: scale(1.1);
+}
+
 nav a.active{
   color: white;
-  border-bottom: 3px solid lightskyblue;
+  border-bottom: 3px solid royalblue;
 }
 
 @media (max-width: 995px) {
