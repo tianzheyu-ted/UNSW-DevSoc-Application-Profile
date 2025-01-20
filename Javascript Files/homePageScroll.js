@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
     // 3. 计算地球的移动与放大
     //    这里假设：progress=0 时不移动也不放大；progress=1 时向右移 300px 并放大到 1.5倍
     const translateX = 300 * progress; // 往右移动 0~300 px
-    const scale = 1 + 0.5 * progress;  // 放大 1~1.5倍
+    const scale = 1 + 0.25 * progress;  // 放大 1~1.5倍
 
     // 注意：如果要让图片看起来是相对于自己中心点移动，
     // 最好先让其在CSS中本来就居中，然后再加上X平移。

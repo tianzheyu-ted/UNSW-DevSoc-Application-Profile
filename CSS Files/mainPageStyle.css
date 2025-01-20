@@ -95,14 +95,14 @@ nav a:hover {
 
 .home {
   position: relative;
-  height: 200vh; 
+  height: 150vh; 
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
 .home-img {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%; 
@@ -120,10 +120,35 @@ nav a:hover {
 
 .home-content {
   position: relative;
-  margin-top: 50vh; /* 让文字从第二屏开始或你想要的位置开始出现 */
+  margin-top: 60vh; /* 让文字从第二屏开始或你想要的位置开始出现 */
   padding: 2rem;
   opacity: 0;        /* 初始设为透明，滚动后再让它变为1 */
   transition: opacity 0.5s ease-out;
+}
+
+#homeContentHeading1 {
+  position: absolute; 
+  top: 0;
+  left: 17vw;
+  font-size: 5rem;
+}
+
+#homeContentHeading2 {
+  position: absolute; 
+  top: 5rem;
+  left: 15vw;
+  font-size: 7rem;
+}
+
+#homeContentHeading3 {
+  position: absolute;
+  top: 15rem;
+  left: 5vw;
+  font-size: 4rem;
+}
+
+.home-content .highlight {
+  color: rgb(39, 64, 137);
 }
 
 .social-icons a {
