@@ -93,48 +93,37 @@ nav a:hover {
   color: rgb(39, 64, 137);
 }
 
-.home-img {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-
-/* .home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.home {
   position: relative;
-  overflow: hidden;
-} */
+  height: 200vh; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 .home-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-  width: 100%;
-  height: 100vh;
-}
-
-.home-img img {
-  max-width: 100%;
-  height: auto;
-  transition: all 0.5s ease-in-out;
-}
-
-/* 文字默认隐藏 */
-.home-content {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
-  text-align: right;
-  font-size: 2rem;
-  color: white;
   position: absolute;
-  right: 0;
-  width: 50%;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100vh; /* 占满可视高度 */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden;
+}
+
+#earthImg {
+  max-width: 50vw;   /* 初始大小，可按需调整 */
+  transition: transform 0.2s ease-out; /* 给transform一个过渡，让移动和缩放更平滑 */
+}
+
+.home-content {
+  position: relative;
+  margin-top: 50vh; /* 让文字从第二屏开始或你想要的位置开始出现 */
+  padding: 2rem;
+  opacity: 0;        /* 初始设为透明，滚动后再让它变为1 */
+  transition: opacity 0.5s ease-out;
 }
 
 .social-icons a {
