@@ -147,19 +147,38 @@ nav a:hover {
   font-size: 4rem;
 }
 
+#homeContentParagraph1 {
+  position: absolute;
+  top: 21rem;
+  left: 5vw;
+  width: 45vw;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 .home-content .highlight {
   color: rgb(39, 64, 137);
+}
+
+.social-icons {
+  position: absolute;
+  top: 50rem;
+  left: 5vw;
+  width: 45vw;
+  font-size: 5rem;
+  padding: 1rem;
 }
 
 .social-icons a {
   text-decoration: none;
   color: white;
+  margin-right: 3rem;
 }
 
 .social-icons a:hover {
-  color: royalblue;
+  color: rgb(39, 64, 137);
 }
 
 .social-icons a:active {
-  color: rgb(39, 64, 137);
+  color: royalblue
 }
