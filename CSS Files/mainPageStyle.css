@@ -20,6 +20,10 @@ body{
   overflow-x: hidden;
   background-color: black;
   color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
 }
 
 header::before {
@@ -52,7 +56,7 @@ header {
 
 .logo{
   font-size: 3rem;
-  color: royalblue;
+  color: rgb(40, 65, 140);
   font-weight: 1000;
   cursor: pointer;
   transition: 0.5s ease;
@@ -84,13 +88,13 @@ nav a:last-child {
 }
 
 nav a.active {
-  color: rgb(39, 64, 137);
-  border-bottom: 3px solid rgb(39, 64, 137);
+  color: rgb(40, 65, 140);
+  border-bottom: 3px solid rgb(40, 65, 140);
   transition: border-bottom 0.3s ease-in-out;
 }
 
 nav a:hover {
-  color: rgb(39, 64, 137);
+  color: rgb(40, 65, 140);
 }
 
 .home {
@@ -106,63 +110,64 @@ nav a:hover {
   top: 0;
   left: 0;
   width: 100%; 
-  height: 100vh; /* 占满可视高度 */
+  height: 100vh;
   display: flex;
   justify-content: center; 
   align-items: center;
   overflow: hidden;
+  pointer-events: none;
 }
 
 #earthImg {
-  max-width: 50vw;   /* 初始大小，可按需调整 */
-  transition: transform 0.2s ease-out; /* 给transform一个过渡，让移动和缩放更平滑 */
+  max-width: 50vw;
+  transition: transform 0.2s ease-out;
 }
 
 .home-content {
   position: relative;
-  margin-top: 60vh; /* 让文字从第二屏开始或你想要的位置开始出现 */
+  margin-top: 60vh; 
   padding: 2rem;
-  opacity: 0;        /* 初始设为透明，滚动后再让它变为1 */
+  opacity: 0;
   transition: opacity 0.5s ease-out;
 }
 
 #homeContentHeading1 {
-  position: absolute; 
+  position: relative; 
   top: 0;
   left: 17vw;
   font-size: 5rem;
 }
 
 #homeContentHeading2 {
-  position: absolute; 
-  top: 5rem;
+  position: relative; 
+  top: -2.5rem;
   left: 15vw;
   font-size: 7rem;
 }
 
 #homeContentHeading3 {
-  position: absolute;
-  top: 15rem;
+  position: relative;
+  top: -4.5rem;
   left: 5vw;
   font-size: 4rem;
 }
 
 #homeContentParagraph1 {
-  position: absolute;
-  top: 21rem;
-  left: 5vw;
+  position: relative;
+  top: -5rem;
+  left: 4.5vw;
   width: 45vw;
   font-size: 3rem;
   padding: 1rem;
 }
 
 .home-content .highlight {
-  color: rgb(39, 64, 137);
+  color: rgb(40, 65, 140);
 }
 
 .social-icons {
-  position: absolute;
-  top: 50rem;
+  position: relative;
+  top: -4rem;
   left: 5vw;
   width: 45vw;
   font-size: 5rem;
@@ -176,9 +181,63 @@ nav a:hover {
 }
 
 .social-icons a:hover {
-  color: rgb(39, 64, 137);
+  color: rgb(40, 65, 140);
 }
 
 .social-icons a:active {
-  color: royalblue
+  color: rgb(30, 55, 115)
+}
+
+@media screen and (max-width: 768px) {
+  #earthImg {
+    max-width: 100vw;
+  }
+  .home-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  #homeContentHeading1 {
+    position: relative; 
+    top: 2rem;
+    left: 17vw;
+    font-size: 5rem;
+  }
+  
+  #homeContentHeading2 {
+    position: relative; 
+    top: 0rem;
+    left: 15vw;
+    font-size: 6rem;
+  }
+  
+  #homeContentHeading3 {
+    position: relative;
+    top: 0rem;
+    left: 5vw;
+    width: 70vw;
+    font-size: 4rem;
+  }
+  
+  #homeContentParagraph1 {
+    position: relative;
+    top: 0rem;
+    left: 4.5vw;
+    width: 65vw;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  .home-content .highlight {
+    color: rgb(40, 65, 140);
+  }
+  
+  .social-icons {
+    position: relative;
+    top: 0rem;
+    left: 5vw;
+    width: 65vw;
+    font-size: 3rem;
+    padding: 1rem;
+  }
 }
