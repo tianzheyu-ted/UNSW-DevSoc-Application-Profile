@@ -240,4 +240,10 @@ nav a:hover {
     font-size: 3rem;
     padding: 1rem;
   }
+
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+  }
 }
