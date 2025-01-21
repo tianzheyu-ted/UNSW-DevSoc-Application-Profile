@@ -16,8 +16,9 @@ window.addEventListener('load', () => {
 
     const translateX = 300 * progress;
     const scale = 1 + 0.25 * progress;
+    const rotationDeg = 100 * progress;
 
-    earthImg.style.transform = `translateX(${translateX}px) scale(${scale})`;
+    earthImg.style.transform = `translateX(${translateX}px) rotate(${rotationDeg}deg) scale(${scale})`;
 
     homeContent.style.opacity = progress;
   });
