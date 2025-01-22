@@ -147,17 +147,19 @@ nav a:hover {
 
 #homeContentHeading3 {
   position: relative;
-  top: -4.5rem;
-  left: 5vw;
+  top: -4.25rem;
+  left: 7vw;
   font-size: 4rem;
+  font-weight: 400;
 }
 
 #homeContentParagraph1 {
   position: relative;
   top: -5rem;
-  left: 4.5vw;
+  left: 4.25vw;
   width: 45vw;
   font-size: 3rem;
+  font-weight: 300;
   padding: 1rem;
 }
 
@@ -185,7 +187,7 @@ nav a:hover {
 }
 
 .social-icons a:active {
-  color: rgb(30, 55, 115)
+  color: rgb(30, 55, 115);
 }
 
 @media screen and (max-width: 768px) {
