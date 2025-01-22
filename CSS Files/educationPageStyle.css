@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   font-family: Oswald, serif;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
@@ -20,6 +20,10 @@ body{
   overflow-x: hidden;
   background-color: black;
   color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
 }
 
 header::before {
@@ -52,7 +56,7 @@ header {
 
 .logo{
   font-size: 3rem;
-  color: royalblue;
+  color: rgb(40, 65, 140);
   font-weight: 1000;
   cursor: pointer;
   transition: 0.5s ease;
@@ -84,11 +88,117 @@ nav a:last-child {
 }
 
 nav a.active {
-  color: rgb(39, 64, 137);
-  border-bottom: 3px solid rgb(39, 64, 137);
+  color: rgb(40, 65, 140);
+  border-bottom: 3px solid rgb(40, 65, 140);
   transition: border-bottom 0.3s ease-in-out;
 }
 
 nav a:hover {
-  color: rgb(39, 64, 137);
+  color: rgb(40, 65, 140);
+}
+
+.education {
+  position: relative;
+  height: 150vh; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.education-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#earthImg {
+  max-width: 50vw;
+  transition: transform 0.2s ease-out;
+}
+
+.education-content {
+  position: relative;
+  margin-top: 60vh; 
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.education-heading {
+  position: relative; 
+  top: 0rem;
+  left: 15vw;
+  font-size: 10rem;
+  font-weight: 500;
+  /* border: 2px white; */
+}
+
+.education-list {
+  position: relative; 
+  top: -22.5rem;
+  left: 60vw;
+  font-size: 5rem;
+  font-weight: 400;
+  list-style-type: none;
+  padding-left: 0;  
+  /* margin-bottom: 4rem; */
+  /* border: 2px white; */
+}
+
+.education-list p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 40vw;
+}
+
+.education-content .education-heading .highlight {
+  color: rgb(40, 65, 140);
+}
+
+.education-content .education-list .highlight {
+  color: rgb(30, 55, 115);
+}
+
+@media screen and (max-width: 768px) {
+  #earthImg {
+    max-width: 100vw;
+  }
+
+  .education-heading {
+    position: relative; 
+    top: 0rem;
+    left: 15vw;
+    font-size: 5rem;
+    font-weight: 500;
+    /* border: 2px white; */
+  }
+
+  .education-list {
+    position: relative; 
+    top: 0;
+    left: 5vw;
+    font-size: 5rem;
+    font-weight: 400;
+    list-style-type: none;
+    padding-left: 0;  
+    /* margin-bottom: 4rem; */
+    /* border: 2px white; */
+  }
+
+  .education-list p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 80vw;
+  }
 }
