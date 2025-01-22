@@ -147,15 +147,15 @@ nav a:hover {
 
 #homeContentHeading3 {
   position: relative;
-  top: -4.25rem;
-  left: 7vw;
+  top: -3.75rem;
+  left: 5vw;
   font-size: 4rem;
   font-weight: 400;
 }
 
 #homeContentParagraph1 {
   position: relative;
-  top: -5rem;
+  top: -4.5rem;
   left: 4.25vw;
   width: 45vw;
   font-size: 3rem;
@@ -216,7 +216,7 @@ nav a:hover {
   #homeContentHeading3 {
     position: relative;
     top: 0rem;
-    left: 5vw;
+    left: 3vw;
     width: 70vw;
     font-size: 3rem;
   }
@@ -224,7 +224,7 @@ nav a:hover {
   #homeContentParagraph1 {
     position: relative;
     top: 0rem;
-    left: 4.5vw;
+    left: 1.5vw;
     width: 65vw;
     font-size: 2rem;
     padding: 1rem;
