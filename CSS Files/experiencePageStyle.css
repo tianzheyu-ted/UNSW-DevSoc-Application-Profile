@@ -133,8 +133,8 @@ nav a:hover {
 
 #experienceHeading1 {
   position: relative; 
-  top: 13vw;
-  left: 65vw;
+  top: 11.5vw;
+  left: 62.5vw;
   font-size: 10rem;
   font-weight: 500;
   /* border: 2px white; */
@@ -174,5 +174,49 @@ nav a:hover {
 }
 
 #experienceHeading3 .highlight {
-  color: rgb(30, 55, 115);
+  color: rgb(180, 180, 180);
+}
+
+#experienceHeading3 .italic {
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  #earthImg {
+    max-width: 100vw;
+  }
+
+  #experienceHeading1 {
+    position: relative; 
+    top: 22.5vw;
+    left: 50vw;
+    font-size: 5rem;
+    font-weight: 500;
+    /* border: 2px white; */
+  }
+
+  #experienceHeading2 {
+    position: relative;
+    top: 25vw;
+    left: 5vw;
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+  
+  #experienceHeading3 {
+    position: relative;
+    top: 25vw;
+    left: 5vw;
+    font-size: 2.25rem;
+    font-weight: 350;
+  }
+
+  .experience-list {
+    position: relative;
+    top: 25vw;
+    left: 5vw;
+    font-size: 2rem;
+    font-weight: 275;
+    max-width: 70vw;
+  }
 }
