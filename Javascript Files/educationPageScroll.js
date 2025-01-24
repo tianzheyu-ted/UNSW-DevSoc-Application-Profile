@@ -4,7 +4,6 @@ window.addEventListener('load', () => {
   const educationSection = document.getElementById('educationSection');
   
   window.addEventListener('scroll', () => {
-
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const educationHeight = educationSection.offsetHeight;
     const windowHeight = window.innerHeight;

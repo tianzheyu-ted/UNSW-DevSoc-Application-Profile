@@ -4,7 +4,6 @@ window.addEventListener('load', () => {
   const homeSection = document.getElementById('homeSection');
 
   window.addEventListener('scroll', () => {
-
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const homeHeight = homeSection.offsetHeight;
     const windowHeight = window.innerHeight;

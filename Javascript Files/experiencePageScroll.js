@@ -4,7 +4,6 @@ window.addEventListener('load', () => {
   const experienceSection = document.getElementById('experienceSection');
   
   window.addEventListener('scroll', () => {
-
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const experienceHeight = experienceSection.offsetHeight;
     const windowHeight = window.innerHeight;
