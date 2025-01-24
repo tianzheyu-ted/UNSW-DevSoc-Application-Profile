@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
   const earthImg = document.getElementById('earthImg');
   const homeContent = document.getElementById('homeContent');
   const homeSection = document.getElementById('homeSection');
+  const scrollIndicator = document.getElementById('scrollIndicator');
 
   window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -20,5 +21,6 @@ window.addEventListener('load', () => {
     earthImg.style.transform = `translateX(${translateX}px) rotate(${rotationDeg}deg) scale(${scale})`;
 
     homeContent.style.opacity = progress;
+    scrollIndicator.style.opacity = 1 - progress;
   });
 });

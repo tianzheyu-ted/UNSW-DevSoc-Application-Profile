@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
   const earthImg = document.getElementById('earthImg');
   const skillContent = document.getElementById('skillContent');
   const skillSection = document.getElementById('skillSection');
+  const scrollIndicator = document.getElementById('scrollIndicator');
   
   window.addEventListener('scroll', () => {
 
@@ -21,5 +22,6 @@ window.addEventListener('load', () => {
     earthImg.style.transform = `translateX(${translateX}px) rotate(${rotationDeg}deg) scale(${scale})`;
 
     skillContent.style.opacity = progress;
+    scrollIndicator.style.opacity = 1 - progress;
   });
 });
