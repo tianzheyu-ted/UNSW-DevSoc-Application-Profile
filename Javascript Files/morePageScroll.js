@@ -1,5 +1,16 @@
 const sections = document.querySelectorAll('.page');
 const dots = document.querySelectorAll('.dot');
+const logo = document.querySelector('.logo');
+const navLinks = document.querySelectorAll('nav a');
+
+const colors = [
+  'rgb(40, 65, 140)',
+  'rgb(155, 39, 20)',
+  'rgb(239, 124, 163)',
+  'rgb(240, 220, 160)',
+  'rgb(220, 100, 75)',
+  'rgb(247, 230, 77)',
+];
 
 document.querySelector('.page-container').addEventListener('scroll', () => {
   let index = 0;
@@ -12,6 +23,9 @@ document.querySelector('.page-container').addEventListener('scroll', () => {
 
   dots.forEach(dot => dot.classList.remove('active'));
   dots[index].classList.add('active');
+
+  logo.style.color = colors[index];
+  document.documentElement.style.setProperty('--nav-color', colors[index]);
 });
 
 dots.forEach((dot, i) => {
